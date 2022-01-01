@@ -1,0 +1,317 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #4e5150;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+}
+
+.grey-box,
+.amount-container,
+.continue,
+img,
+input,
+select {
+  border-radius: 12px;
+}
+
+.grey-box {
+  background-color: #f2f2f2;
+  padding: 10px 16px;
+  width: 96%;
+  max-width: 383px;
+  max-height: 535px;
+  margin: auto 0.8rem;
+}
+
+img {
+  max-width: 300px;
+  width: 42%;
+  margin-right: 22px;
+}
+
+.product {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #f2994a;
+  font-size: 0.875rem;
+}
+
+.price::before,
+#shipping::before,
+#totalPrice::before {
+  content: "\0024";
+}
+
+.vintage::after {
+  content: "\0024 94.99";
+  color: #4e5150;
+  font-size: 0.625rem;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.levi::after {
+  content: "\0024 124.99";
+  color: #4e5150;
+  font-size: 0.625rem;
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+
+.numerator {
+  background-color: #e0e0e0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.numerator-check:focus + .numerator,
+.numerator:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #828282;
+}
+
+.numerator:hover {
+  filter: brightness(80%);
+}
+
+.productAmount {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.amount-container {
+  border: 1px solid #828282;
+  padding: 9px;
+}
+
+.mt-4 .amount-container {
+  width: 115%;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing div {
+  border-top: 1px solid #bdbdbd;
+}
+
+.pricing p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+/* Form Section */
+
+section {
+  max-width: 470px;
+  margin: auto 0.8rem;
+}
+
+h2 {
+  color: #333333;
+  font-size: 00.875rem;
+}
+
+section p,
+input[type="checkbox"] + label {
+  color: #4f4f4f;
+  font-size: 0.625rem;
+  margin: 0;
+}
+
+div label {
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+  max-height: 40px;
+}
+
+input,
+select,
+.form-control,
+.form-select {
+  color: #333333;
+  font-size: 0.75rem;
+  border: 1px solid #828282;
+  padding: 10px 37px;
+  width: 95%;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 12px;
+}
+
+.inputIcon::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+.email::before {
+  background: url("./icons/envelope-fill.svg") center / contain no-repeat;
+}
+
+.phone::before {
+  background: url("./icons/telephone-fill.svg") center / contain no-repeat;
+}
+
+.phone:before {
+  background: url("./icons/telephone-fill.svg") center / contain no-repeat;
+}
+
+.fname:before {
+  background: url("./icons/person-circle.svg") center / contain no-repeat;
+}
+
+.address:before {
+  background: url("./icons/house-door-fill.svg") center / contain no-repeat;
+}
+
+.city:before {
+  background: url("./icons/building.svg") center / contain no-repeat;
+}
+
+.country:before {
+  background: url("./icons/building.svg") center / contain no-repeat;
+}
+
+.zipCode:before {
+  background: url("./icons/mailbox2.svg") center / contain no-repeat;
+}
+
+.country,
+.zipCode {
+  max-width: 226px;
+  max-height: 40px;
+}
+
+.zipCode input {
+  width: 90%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="checkbox"] + label {
+  width: auto;
+}
+
+.text-end {
+  margin-right: 4%;
+}
+
+.btn {
+  background-color: #f2994a;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 14px 35px;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #57f2b8;
+}
+
+/* Footer  */
+
+footer {
+  text-align: center;
+}
+
+footer p,
+.footer-link {
+  color: #b9bdcf;
+  font-size: 0.87rem;
+}
+
+.footer-link:first-child {
+  font-weight: bold;
+}
+
+.footer-link:nth-child(2) {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 500px) {
+  body {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .product,
+  .price,
+  input {
+    font-size: 1rem;
+  }
+
+  .levi::after,
+  .vintage::after {
+    font-size: 0.875rem;
+  }
+
+  .pricing p,
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  section p {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 853px) {
+  html {
+    background-color: #fff6f2;
+  }
+  body {
+    max-width: 900px;
+    /* min-height: 100vh; */
+    position: relative;
+  }
+
+  .grey-box {
+    position: absolute;
+    top: 152px;
+    right: 5px;
+  }
+
+  footer {
+    margin: 100px auto 1em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    min-height: 100vh;
+  }
+}
